@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Jogo da Velha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div class="area">
+    <h1 class="rainbow rainbow_text_animated">Joguinho da Velha</h1>
+    <div class="main">
+      <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+      <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+      <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+    <div>
+      <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+      <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+      <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+    <div>
+      <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+      <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+      <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+    <div class="jogador">
+      <label class="rainbow rainbow_text_animated">Jogador:</label>
+      <label id="jogador-selecionado" class="rainbow rainbow_text_animated"></label>
+    </div>
+    <div class="vencedor">
+      <label class="rainbow rainbow_text_animated">Vencedor:</label>
+      <label id="vencedor-selecionado" class="rainbow rainbow_text_animated"></label>
+    </div>
+    <div class="pontuacao">
+      <label class="rainbow rainbow_text_animated">Vitórias seguidas do X: <span class="rainbow rainbow_text_animated" id="pontosX" onclick="aumenta()">0</span>
+      | 
+      Vitórias seguidas do O: <span class="rainbow rainbow_text_animated" id="pontosO" onclick="aumenta()">0</span>
+      </label>
+    </div>
+    <div>
+      <button onclick="reset()" class="rainbow rainbow_text_animated">Reiniciar</button>
+    </div>
+
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
